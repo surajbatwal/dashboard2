@@ -1,0 +1,59 @@
+mat-sidenav-container
+{
+    height: 100%;
+
+}
+
+
+mat-sidenav
+{
+    background-color:#FFFFFF;
+    text-align: center;
+    width: 270px;
+}
+
+mat-sidenav-content
+{
+    background-color:whitesmoke;
+    
+    
+}
+
+hr
+{
+    margin-inline-start: 2em;
+    margin-inline-end: 2em;
+}
+
+mat-sidenav h1
+{
+   
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    color: #616161;
+    margin-top: 0.5em;
+   float: left;
+}
+
+mat-sidenav   .mat-button
+{
+    width:15em;
+    height: 4em;
+    font-size: 14px;
+    color:grey;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-align: center;
+    
+}
+
+mat-sidenav   .mat-button:hover
+{
+    width:15em;
+    height: 4em;
+    font-size: 14px;
+    color:white;
+    background-color: #FF5722;
+   
+    
+}
