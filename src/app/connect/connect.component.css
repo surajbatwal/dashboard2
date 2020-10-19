@@ -1,0 +1,22 @@
+
+.heading
+{
+    color: gray;
+    font-size: 22px;
+    margin-inline-start: 1em;
+}
+
+.mat-form-field
+{
+    width: 30em;
+    height: 30px;
+    margin-inline-start: 15em;
+    margin-top: 3em;
+}
+
+textarea
+{
+
+    height: 10em;
+    width: 30em;
+}

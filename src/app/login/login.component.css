@@ -1,0 +1,17 @@
+h1
+{
+    color: grey;
+    margin-inline-start: 1em;
+}
+
+.mat-form-field
+{
+    width: 25em;
+    margin-inline-start: 25em;
+}
+
+.mat-raised-button
+{
+    width: 25em;
+    margin-inline-start: 25em;
+}

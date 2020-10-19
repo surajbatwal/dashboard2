@@ -12,24 +12,67 @@
     
     <br>
     <br>
-    <button mat-button >Dashboard</button>
+    <button mat-button (click)="navigation(1)">Dashboard</button>
     
     <br>
-    <button mat-button >Order list</button>    
-    
+    <button mat-button (click)="navigation(2)">Merchants</button>
+
+
     <br>
-    <button mat-button >Accounts</button>    
-    
+    <button mat-button (click)="navigation(3)">Order History</button>
+
     <br>
-    <button mat-button >Connect To Asquare</button>    
+    <button mat-button (click)="navigation(4)">Menu Dashboard</button>
     <br>
-    <button mat-button >Notification</button>
+    <button mat-button (click)="navigation(5)">Merchant Dashboard</button>
     <br>
-    <button mat-button >Settings</button>
+    <button mat-button (click)="navigation(6)">Accounts</button>
+    <br>
+    <button mat-button (click)="navigation(7)">Charts</button>
+    <br>
+    <button mat-button matBadge="8" (click)="navigation(8)">Notification</button>
+    <br>
+    <button mat-button  (click)="navigation(9)">Login</button>
+    <br>
+    <button mat-button  (click)="navigation(10)">Connect To Merchant</button>    
+    <br>
+    <button mat-button  (click)="navigation(11)">Plans</button>
+    <br>
+    <button mat-button  (click)="navigation(12)">Archer portal</button>
+    <br>
+    <button mat-button  (click)="navigation(13)">Leaders</button>
+    <br>
+    <button mat-button  (click)="navigation(14)">Ledgers</button>
+    <br>
+    <button mat-button  (click)="navigation(15)">Merchant Infos</button>
+    <br>
+    <button mat-button  (click)="navigation(16)">Banking</button>
+    <br>  
+    <button mat-button  (click)="navigation(17)">Shield</button>
 
   
   </mat-sidenav>
   <mat-sidenav-content opened>
-    <app-dashboard></app-dashboard>
+
+    <app-dashboard *ngIf="Dashboard"></app-dashboard>
+    <app-merchants *ngIf="Merchants"></app-merchants>
+    <app-orderlist *ngIf="Orderhistory"></app-orderlist>
+    <app-menudashboard *ngIf="Menudashboard"></app-menudashboard>
+    <app-merchantdashboard *ngIf="Merchantdashboard"></app-merchantdashboard>
+    <app-accounts *ngIf="Accounts"></app-accounts>
+    <app-charts *ngIf="Charts"></app-charts>
+    <app-notification *ngIf="Notification"></app-notification>
+    <app-login *ngIf="Login"></app-login>
+    <app-connect *ngIf="Connect"></app-connect>
+    <app-plans *ngIf="Plans"></app-plans>
+    <app-archerportal *ngIf="Archerportal"></app-archerportal>
+    <app-leaders *ngIf="Leaders"></app-leaders>
+    <app-ledgers *ngIf="Ledgers"></app-ledgers>
+    <app-merchantinfo *ngIf="Merchantinfo"></app-merchantinfo>
+    <app-banking *ngIf="Banking"></app-banking>
+    <app-shield *ngIf="Shield"></app-shield>
+  
   </mat-sidenav-content>
 </mat-sidenav-container>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,74 @@
+.example-card {
+    width: 180px;
+    height: 100px;
+    text-align: right;
+    margin-inline-start: 2em;
+    margin-top: 3em;
+    float: left;
+    border-radius: 20px;
+    top:0;
+    transition: top ease 0.3s;
+  }
+
+  .example-card:hover
+  {
+    top:-10px;
+    
+  }
+
+  .example-card img
+  {
+      width:70px;
+      height: 70px;
+      float: left;
+      border-radius: 10px;
+      
+  }
+
+  .mat-card p
+  {
+      font-size: 12px;
+      
+  }
+
+  .pimg
+  {
+    width: 10px;
+    height: 10px;
+  }
+
+
+  h1
+     {
+        color: grey;
+        margin-inline-start: 1em;
+    }
+
+.mat-form-field1
+{
+    float:right;
+    width: 20em;
+    margin-inline-end: 4em;
+
+} 
+
+.mat-raised-button
+{
+    margin-inline-start: 2em;
+    width:67em;
+    text-align: left;
+    height: 50px;
+    background-color: purple;
+    color:white;
+}
+  
+table
+{
+    width:94%;
+    margin-inline-start: 2em;
+}
+
+.mat-form-field2
+{
+    width: 6em;
+}

@@ -1,0 +1,84 @@
+.heading
+{
+    color: gray;
+    font-size: 22px;
+    margin-inline-start: 1em;
+}
+
+h1
+{
+    color:grey;
+    float: left;
+    font-size: 15px;
+}
+h2
+{
+    float: left;
+    margin-inline-start: 2em;
+    margin-inline-end: 2em;
+    text-align: center;
+}
+
+
+.Pdate
+{
+    background-color: yellow;
+    margin-inline-start: 1em;
+    
+    margin-top: 1em;
+    width: 5em;
+    height: 5em;
+    float: left;
+    text-align: center;
+    color: black;
+    border-radius: 10px;
+    top:0;
+    transition: top ease 0.3s;
+}
+
+.Cdate
+{
+    background-color: green;
+    margin-inline-start: 1em;
+    margin-top: 1em;
+    width: 5em;
+    height: 5em;
+    float: left;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    top:0;
+    transition: top ease 0.3s;
+}
+
+.Cdate:hover , .Pdate:hover
+{
+top:-10px;
+}
+
+.mat-raised-button
+{
+    margin-inline-start: 2em;
+    width:67em;
+    text-align: left;
+    height: 50px;
+    background-color: purple;
+    color:white;
+}
+
+.datediv
+{
+    margin-inline-start: 22em;
+
+}
+
+table
+{
+    width:94%;
+    margin-inline-start: 2em;
+}
+
+.mat-form-field
+{
+    width: 6em;
+}

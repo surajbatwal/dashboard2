@@ -1,0 +1,29 @@
+
+<br><br>
+<h1 class="heading">Contact Us</h1>
+
+
+<mat-form-field class="mat-form-field1" appearance="outline">
+    <mat-label>Query</mat-label>
+    <mat-select  [(ngModel)]="Problem"  disableRipple>
+        
+      <mat-option *ngFor="let value of Problems"  value={{value}}   >{{value}}</mat-option>
+     
+    </mat-select>
+  </mat-form-field>
+<br>
+
+  <mat-form-field class="width1" appearance="outline" >
+    <mat-label>Type Message</mat-label>
+    <textarea matInput
+            cdkTextareaAutosize
+            #autosize="cdkTextareaAutosize"
+            cdkAutosizeMinRows="1"
+            cdkAutosizeMaxRows="5"  [(ngModel)]="Message"></textarea>
+</mat-form-field>
+
+<br>
+<br>
+<br>
+<button style="margin-inline-start: 15em;" mat-raised-button type="submit" color="warn" >Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;
+<button mat-raised-button type="submit" color="warn">Cancle</button>

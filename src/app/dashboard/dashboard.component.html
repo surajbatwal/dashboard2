@@ -2,7 +2,7 @@
 <br><br>
 <h1 style="float: left;">Dashboard</h1>
 
-<mat-form-field >
+<mat-form-field class="mat-form-field1">
     <mat-label>Search Bar</mat-label>
     <input matInput placeholder="Search Bar">
   </mat-form-field>
@@ -10,26 +10,26 @@
   <br>
   <br>
   <br>
-<mat-card class="example-card">
+<mat-card class="example-card" (click)="Tabletitle(1)">
     <img src="./assets/incoming.png">
     <p style="color: grey;">incoming</p>
     <h1>{{Incoming}}</h1>
     <hr>
-    <p style="float: left;"><img style="width: 20px; height: 20px;" src="./assets/preview.png">&nbsp;Preview List</p>
+    <p style="float: left;"><img style="width: 20px; height: 20px;"  src="./assets/preview.png">&nbsp;Preview List</p>
 
   </mat-card>
 
 
-  <mat-card class="example-card">
+  <mat-card class="example-card" (click)="Tabletitle(2)">
     <img src="./assets/packed.png">
     <p style="color: grey;">Packed</p>
     <h1>{{Incoming}}/{{Total}}</h1>
     <hr>
-    <p style="float: left;"><img style="width: 20px; height: 20px;" src="./assets/preview.png">&nbsp;Preview List</p>
+    <p style="float: left;"><img style="width: 20px; height: 20px;"  src="./assets/preview.png">&nbsp;Preview List</p>
   </mat-card>
 
 
-  <mat-card class="example-card">
+  <mat-card class="example-card" (click)="Tabletitle(3)">
     
     <img src="./assets/issues.png">
 
@@ -40,7 +40,7 @@
     
   </mat-card>
 
-  <mat-card class="example-card">
+  <mat-card class="example-card" (click)="Tabletitle(4)">
 
     <img src="./assets/outdated.png">
     
@@ -55,7 +55,7 @@
   <br>
   <br>
   <br><br><br><br><br><br><br><br><br>
-  <button mat-raised-button>Real Time Update</button>
+  <button mat-raised-button>{{tabletitle}}</button>
   <br><br><br>
 
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
@@ -95,8 +95,25 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             Actions </th>
         <td mat-cell *matCellDef="let element">
-            <img style="border-radius: 20px;margin-inline-start: 1em;" src="./assets/successtik.png"> 
-            <img style="border-radius: 20px;margin-inline-start: 1em;" src="./assets/crosstik.png">
+            <img style="border-radius: 20px;margin-inline-start: 1em;" (click)="showoptions(1)" src="./assets/successtik.png"> 
+            <mat-form-field *ngIf="successtikflag" class="mat-form-field2" appearance="outline">
+              <mat-label>Select</mat-label>
+              <mat-select  [(ngModel)]="successtik"  disableRipple>
+                  
+                <mat-option *ngFor="let value of successtikoption"  value={{value}}   >{{value}}</mat-option>
+               
+              </mat-select>
+            </mat-form-field>
+
+            <img style="border-radius: 20px;margin-inline-start: 1em;" (click)="showoptions(2)" src="./assets/crosstik.png">
+            <mat-form-field  *ngIf="crosstikflag"  class="mat-form-field2" appearance="outline">
+              <mat-label>Select</mat-label>
+              <mat-select  [(ngModel)]="crosstik"  disableRipple>
+                  
+                <mat-option *ngFor="let value of successtikoption"  value={{value}}   >{{value}}</mat-option>
+               
+              </mat-select>
+            </mat-form-field>
             <img style="border-radius: 20px;margin-inline-start: 1em;" src="./assets/viewtik.png">
             <img style="border-radius: 20px;margin-inline-start: 1em;" src="./assets/printtik.png">
             
